@@ -1,7 +1,7 @@
 </$objtype/mkfile
 TARG=\
-	mst\
-	tomst\
+	hmst\
+	tohmst\
 
 OFILES=
 HFILES=
