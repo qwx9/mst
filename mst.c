@@ -173,8 +173,9 @@ parsent(char *s)
 	}
 	s = p;
 	o = strtol(s, &p, 10);
-	if(p == s || o < 0 || o > 10)
+	if(p == s || o < -1 || o > 9)
 		sysfatal("line %d: invalid octave number", line);
+	o++;
 	n += 12 * o;
 	if(n < 0 || n > 127)
 		sysfatal("line %d: invalid note number", line);
